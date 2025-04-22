@@ -1,0 +1,1 @@
+// Deprecated file - using PatientTrackingBoard.tsx instead

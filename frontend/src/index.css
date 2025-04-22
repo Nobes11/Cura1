@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  /* Custom theme colors for Cura hospital system with cream and sage palette */
+  :root {
+    /* Original theme variables remain unchanged */
+    
+    /* Cura custom theme variables */
+    --cura-primary: 142 17% 48%;       /* Sage green - primary actions, buttons */
+    --cura-primary-hover: 143 18% 38%; /* Darker sage - hover states */
+    --cura-primary-light: 140 12% 85%; /* Light sage - backgrounds, borders */
+    
+    --cura-secondary: 39 35% 91%;       /* Cream - secondary elements */
+    --cura-secondary-hover: 39 29% 86%; /* Darker cream - hover states */
+    
+    --cura-accent: 147 13% 55%;          /* Mint green - accents, highlights */
+    --cura-accent-light: 147 29% 92%;    /* Light mint - subtle backgrounds */
+    
+    --cura-neutral: 0 0% 29%;           /* Dark gray - text */
+    --cura-neutral-light: 0 0% 52%;     /* Medium gray - secondary text */
+    
+    --cura-background: 0 0% 100%;       /* White - main background */
+    --cura-background-alt: 43 29% 96%;  /* Off-white - alternating sections */
+    
+    --cura-success: 136 28% 47%;         /* Green - success states */
+    --cura-warning: 42 73% 67%;          /* Amber - warning states */
+    --cura-danger: 12 76% 61%;           /* Coral - error/danger states */
+    --cura-info: 204 44% 44%;            /* Blue - information states */
+    
+    --cura-border: 0 0% 88%;             /* Light gray - borders */
+    --cura-input: 0 0% 96%;              /* Very light gray - form inputs */
+    
+    /* Shadow with a hint of the primary color */
+    --cura-shadow: 0px 4px 12px rgba(92, 124, 103, 0.08);
+  }
+
+  /* Dark mode overrides for Cura theme */
+  .dark {
+    /* Original dark theme variables remain unchanged */
+    
+    /* Cura custom dark theme variables */
+    --cura-primary: 147 13% 55%;         /* Lighter sage - more visible in dark mode */
+    --cura-primary-hover: 147 13% 65%;   /* Even lighter sage for hover in dark mode */
+    --cura-primary-light: 142 17% 28%;   /* Dark sage - backgrounds in dark mode */
+    
+    --cura-secondary: 35 13% 24%;        /* Dark cream - secondary elements */
+    --cura-secondary-hover: 34 13% 30%;  /* Slightly lighter for hover states */
+    
+    --cura-accent: 142 17% 48%;          /* Darker mint - accents */
+    --cura-accent-light: 140 18% 20%;    /* Very dark mint - subtle backgrounds */
+    
+    --cura-neutral: 0 0% 88%;            /* Light gray - text */
+    --cura-neutral-light: 0 0% 63%;      /* Medium gray - secondary text */
+    
+    --cura-background: 0 0% 7%;          /* Very dark gray - main background */
+    --cura-background-alt: 0 0% 12%;     /* Slightly lighter dark gray - alternating sections */
+    
+    --cura-success: 136 28% 40%;         /* Darker green - success states */
+    --cura-warning: 41 56% 59%;          /* Darker amber - warning states */
+    --cura-danger: 12 54% 51%;           /* Darker coral - error states */
+    --cura-info: 203 42% 39%;            /* Darker blue - information states */
+    
+    --cura-border: 0 0% 20%;             /* Dark gray - borders */
+    --cura-input: 0 0% 16%;              /* Very dark gray - form inputs */
+    
+    /* Shadow with a hint of the primary color but darker */
+    --cura-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Comment box styling */
+.comment-box {
+  min-height: 0.5in;
+  min-width: 150px;
+  max-height: 400px;  /* Allow expansion up to this height */
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+.comment-box:hover {
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.comment-item {
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comment-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
